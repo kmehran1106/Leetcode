@@ -7,14 +7,12 @@ Problem Statement:
 import pytest
 from typing import List
 
-from code_merge_sort import Solution as MergeSort
-
 
 class Solution:
     def execute(self, nums: List[int]) -> List[List[int]]:
-        x = list()
+        nums.sort()
 
-        nums = MergeSort().execute(nums)
+        x = list()
 
         for i, value in enumerate(nums):
             if i > 0 and value == nums[i - 1]:

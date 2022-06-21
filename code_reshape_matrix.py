@@ -9,7 +9,7 @@ from typing import List, NamedTuple
 
 
 class Solution:
-    def execute(self, matrix:  List[List[int]], r: int, c: int) -> List[List[int]]:
+    def execute(self, matrix: List[List[int]], r: int, c: int) -> List[List[int]]:
         if len(matrix) * len(matrix[0]) != r * c:
             return matrix
 
@@ -20,10 +20,9 @@ class Solution:
 
         i = 0
         for _ in range(r):
-            _matrix.append(_flattened[i:i+c])
+            _matrix.append(_flattened[i : i + c])
             i += c
         return _matrix
-
 
 
 class InputTuple(NamedTuple):
@@ -34,11 +33,11 @@ class InputTuple(NamedTuple):
 
 @pytest.fixture
 def get_fixtures():
-    first_input = InputTuple(matrix=[[1,2],[3,4]], r=1, c=4)
-    first_output = [[1,2,3,4]]
+    first_input = InputTuple(matrix=[[1, 2], [3, 4]], r=1, c=4)
+    first_output = [[1, 2, 3, 4]]
 
-    second_input = InputTuple(matrix=[[1,2],[3,4]], r=2, c=4)
-    second_output =[[1,2],[3,4]]
+    second_input = InputTuple(matrix=[[1, 2], [3, 4]], r=2, c=4)
+    second_output = [[1, 2], [3, 4]]
 
     return [
         (first_input, first_output),
