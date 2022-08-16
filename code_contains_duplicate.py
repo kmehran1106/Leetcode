@@ -5,12 +5,11 @@ Problem Statement:
 
 
 import pytest
-from typing import List, NamedTuple
+from typing import List
 
 
 class Solution:
     def execute(self, nums: List[int]) -> bool:
-        print(nums)
         _set = set()
 
         for num in nums:

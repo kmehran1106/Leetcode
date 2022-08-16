@@ -11,12 +11,15 @@ from typing import List, NamedTuple
 class Solution:
     def execute(self, nums: List[int], target: int) -> List[int]:
         _hashmap = dict()
-        for a, value in enumerate(nums):
-            b = _hashmap.get(target - value, None)
-            if b is None:
-                _hashmap[value] = a
+        for index, value in enumerate(nums):
+            a = target - value
+            b = _hashmap.get(a, None)
+
+            if b is not None:
+                return [b, index]
             else:
-                return [b, a]
+                _hashmap[value] = index
+
         return list()
 
 
