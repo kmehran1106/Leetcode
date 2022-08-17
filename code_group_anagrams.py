@@ -16,7 +16,7 @@ class Solution:
         for word in strs:
             _s = [0] * 26
             for c in word:
-                _s[ord(c) - ord('a')] += 1
+                _s[ord(c) - ord("a")] += 1
             _map[tuple(_s)].append(word)
 
         return list(_map.values())
@@ -24,8 +24,8 @@ class Solution:
 
 @pytest.fixture
 def get_fixtures():
-    first_input = ["eat","tea","tan","ate","nat","bat"]
-    first_output = [["bat"], ["nat","tan"], ["ate","eat","tea"]]
+    first_input = ["eat", "tea", "tan", "ate", "nat", "bat"]
+    first_output = [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
 
     second_input = [""]
     second_output = [[""]]

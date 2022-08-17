@@ -19,7 +19,7 @@ class Solution:
             if _sum == k:
                 result += 1
 
-            for b in nums[index+1:]:
+            for b in nums[index + 1 :]:
                 _sum += b
                 if _sum == k:
                     result += 1
@@ -61,10 +61,10 @@ def get_fixtures():
     first_input = InputTuple(nums=[1, 1, 1], k=2)
     first_output = 2
 
-    second_input =  InputTuple(nums=[1, 2, 3, 4, 5], k=9)
+    second_input = InputTuple(nums=[1, 2, 3, 4, 5], k=9)
     second_output = 2
 
-    third_input =  InputTuple(nums=[-1, -1, 1], k=0)
+    third_input = InputTuple(nums=[-1, -1, 1], k=0)
     third_output = 1
 
     fourth_input = InputTuple(nums=[1, -1, 0], k=0)
