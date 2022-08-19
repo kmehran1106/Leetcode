@@ -1,10 +1,6 @@
-"""
-Problem Statement:
-    https://leetcode.com/problems/print-words-vertically/
-"""
+# NOTE: PROBLEM STATEMENT - https://leetcode.com/problems/print-words-vertically/
 
 
-import pytest
 from typing import List
 
 
@@ -25,18 +21,3 @@ class Solution:
             x.append(_w.rstrip())
 
         return x
-
-
-@pytest.fixture
-def get_fixtures():
-    first_input = "HOW ARE YOU"
-    first_output = ["HAY", "ORO", "WEU"]
-
-    return [
-        (first_input, first_output),
-    ]
-
-
-def test_code(get_fixtures):
-    for data in get_fixtures:
-        assert Solution().execute(data[0]) == data[1]

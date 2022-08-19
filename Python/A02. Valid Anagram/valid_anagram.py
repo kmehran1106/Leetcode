@@ -1,11 +1,4 @@
-"""
-Problem Statement:
-    https://leetcode.com/problems/valid-anagram/
-"""
-
-
-import pytest
-from typing import List, NamedTuple
+# NOTE: PROBLEM STATEMENT - https://leetcode.com/problems/valid-anagram/
 
 
 class Solution:
@@ -24,27 +17,3 @@ class Solution:
             if v != _map_t.get(k, 0):
                 return False
         return True
-
-
-class InputTuple(NamedTuple):
-    s: str
-    t: str
-
-
-@pytest.fixture
-def get_fixtures():
-    first_input = InputTuple(s="anagram", t="nagaram")
-    first_output = True
-
-    second_input = InputTuple(s="rat", t="car")
-    second_output = False
-
-    return [
-        (first_input, first_output),
-        (second_input, second_output),
-    ]
-
-
-def test_code(get_fixtures):
-    for data in get_fixtures:
-        assert Solution().execute(*data[0]) == data[1]
