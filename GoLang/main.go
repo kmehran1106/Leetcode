@@ -4,6 +4,7 @@ import (
 	"Leetcode/01.BinarySearch"
 	"Leetcode/02.MergeSort"
 	"Leetcode/A01.ContainsDuplicate"
+	"Leetcode/A02.ValidAnagram"
 	"fmt"
 )
 
@@ -17,4 +18,6 @@ func main() {
 
 	containsDuplicateArray := []int{1, 2, 3, 2}
 	fmt.Println(contains_duplicate.ContainsDuplicate(containsDuplicateArray))
+
+	fmt.Println(valid_anagram.ValidAnagram("rat", "car"))
 }

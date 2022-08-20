@@ -6,15 +6,15 @@ import (
 
 func TestCode(t *testing.T) {
 	var tests = []struct {
-		nums    []int
+		nums   []int
 		output bool
 	}{
 		{
-			nums:    []int{1, 2, 3, 4, 5},
+			nums:   []int{1, 2, 3, 4, 5},
 			output: true,
 		},
 		{
-			nums:    []int{1, 1, 3, 4, 5},
+			nums:   []int{1, 1, 3, 4, 5},
 			output: false,
 		},
 	}

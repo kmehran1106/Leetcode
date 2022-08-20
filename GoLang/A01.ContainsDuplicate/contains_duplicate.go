@@ -14,5 +14,5 @@ func ContainsDuplicate(nums []int) bool {
 	}
 
 	return true
-	
+
 }
