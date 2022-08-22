@@ -25,4 +25,5 @@ def get_fixtures():
 
 def test_code(get_fixtures):
     for data in get_fixtures:
-        assert Solution().execute(data[0]) == data[1]
+        assert Solution().solution_basic(data[0]) == data[1]
+        assert Solution().solution_follow_up(data[0]) == data[1]
