@@ -11,11 +11,11 @@ func TestCode(t *testing.T) {
 	}{
 		{
 			nums:   []int{1, 2, 3, 4, 5},
-			output: true,
+			output: false,
 		},
 		{
 			nums:   []int{1, 1, 3, 4, 5},
-			output: false,
+			output: true,
 		},
 	}
 

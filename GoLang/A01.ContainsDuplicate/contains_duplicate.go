@@ -7,12 +7,12 @@ func ContainsDuplicate(nums []int) bool {
 	for _, value := range nums {
 		_, ok := hashMap[value]
 		if ok {
-			return false
+			return true
 		} else {
 			hashMap[value] = true
 		}
 	}
 
-	return true
+	return false
 
 }
