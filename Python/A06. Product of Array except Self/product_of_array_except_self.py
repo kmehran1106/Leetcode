@@ -13,22 +13,22 @@ class Solution:
             if index == 0:
                 _prefix[index] = num
             else:
-                _prefix[index] = _prefix[index-1] * num
+                _prefix[index] = _prefix[index - 1] * num
 
         for index, num in enumerate(nums[::-1]):
             if index == 0:
                 _postfix[index] = num
             else:
-                _postfix[index] = _postfix[index-1] * num
+                _postfix[index] = _postfix[index - 1] * num
         _postfix = _postfix[::-1]
 
         for index in range(_len):
             if index == 0:
-                _output[index] = 1 * _postfix[index+1]
+                _output[index] = 1 * _postfix[index + 1]
             elif index == _len - 1:
-                _output[index] = _prefix[index-1] * 1
+                _output[index] = _prefix[index - 1] * 1
             else:
-                _output[index] = _prefix[index-1] * _postfix[index+1]
+                _output[index] = _prefix[index - 1] * _postfix[index + 1]
         return _output
 
     def solution_follow_up(self, nums: List[int]) -> List[int]:
@@ -42,7 +42,7 @@ class Solution:
             _prefix *= nums[i]
 
         for i in range(_len, 0, -1):
-            _output[i-1] *= _postfix
-            _postfix *= nums[i-1]
+            _output[i - 1] *= _postfix
+            _postfix *= nums[i - 1]
 
         return _output

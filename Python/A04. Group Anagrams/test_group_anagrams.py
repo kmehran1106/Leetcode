@@ -3,7 +3,6 @@ import pytest
 from group_anagrams import Solution
 
 
-
 @pytest.fixture
 def get_fixtures():
     first_input = ["eat", "tea", "tan", "ate", "nat", "bat"]

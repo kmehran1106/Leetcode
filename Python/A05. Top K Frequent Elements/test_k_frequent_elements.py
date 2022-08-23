@@ -10,7 +10,6 @@ from typing import List, NamedTuple
 from k_frequent_elements import Solution
 
 
-
 class InputTuple(NamedTuple):
     nums: List[int]
     k: int

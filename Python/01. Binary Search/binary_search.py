@@ -20,6 +20,3 @@ class Solution:
 
     def execute(self, arr: List[int], value: int) -> int:
         return self._binary_search(arr, value)
-
-
-
