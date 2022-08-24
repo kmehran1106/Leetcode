@@ -14,7 +14,7 @@ func GroupAnagrams(strs []string) [][]string {
 		baseRuneArray := []rune(baseString)
 
 		for _, c := range word {
-			baseRuneArray[c-runeA] = baseRuneArray[c-runeA] + 1
+			baseRuneArray[c-runeA]++
 		}
 		hashMap[string(baseRuneArray)] = append(hashMap[string(baseRuneArray)], word)
 	}
