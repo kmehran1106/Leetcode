@@ -6,6 +6,7 @@ import (
 	"Leetcode/A01.ContainsDuplicate"
 	"Leetcode/A02.ValidAnagram"
 	"Leetcode/A03.TwoSum"
+	"Leetcode/A04.GroupAnagrams"
 	"fmt"
 )
 
@@ -26,4 +27,7 @@ func main() {
 	twoSumArray := []int{2, 7, 11, 15}
 	twoSumTarget := 9
 	fmt.Println(two_sum.TwoSum(twoSumArray, twoSumTarget))
+
+	groupAnagramsArray := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
+	fmt.Println(group_anagrams.GroupAnagrams(groupAnagramsArray))
 }
