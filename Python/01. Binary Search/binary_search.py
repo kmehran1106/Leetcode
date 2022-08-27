@@ -6,15 +6,15 @@ class Solution:
         low, high = 0, len(arr) - 1
 
         while low <= high:
-            _mid = (high + low) // 2
-            _value = arr[_mid]
+            _mid_index = (high + low) // 2
+            _mid_value = arr[_mid_index]
 
-            if _value < value:
-                low = _mid + 1
-            elif _value > value:
-                high = _mid - 1
+            if _mid_value < value:
+                low = _mid_index + 1
+            elif _mid_value > value:
+                high = _mid_index - 1
             else:
-                return _mid
+                return _mid_index
 
         return -1
 

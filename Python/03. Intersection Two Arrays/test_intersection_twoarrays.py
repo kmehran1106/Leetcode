@@ -273,4 +273,5 @@ def get_fixtures():
 
 def test_code(get_fixtures):
     for data in get_fixtures:
-        assert Solution().execute(*data[0]) == data[1]
+        assert Solution().solution_sorted(*data[0]) == data[1]
+        assert Solution().solution_unsorted(*data[0]) == data[1]
