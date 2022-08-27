@@ -22,6 +22,6 @@ class Solution:
                 if prefix > negative:
                     negative = prefix
                 else:
-                    result = max(prefix/negative, result)
+                    result = max(prefix / negative, result)
 
         return int(result)
