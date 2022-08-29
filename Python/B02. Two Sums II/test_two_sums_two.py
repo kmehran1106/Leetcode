@@ -1,7 +1,7 @@
 import pytest
 from typing import List, NamedTuple
 
-from two_sum import Solution
+from two_sums_two import Solution
 
 
 class InputTuple(NamedTuple):
@@ -12,10 +12,10 @@ class InputTuple(NamedTuple):
 @pytest.fixture
 def get_fixtures():
     first_input = InputTuple(nums=[2, 7, 11, 15], target=9)
-    first_output = [0, 1]
+    first_output = [1, 2]
 
-    second_input = InputTuple(nums=[3, 2, 4], target=6)
-    second_output = [1, 2]
+    second_input = InputTuple(nums=[2, 3, 4], target=6)
+    second_output = [1, 3]
 
     return [
         (first_input, first_output),

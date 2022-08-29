@@ -26,10 +26,9 @@ class Solution:
             _len = int(encoded_string[i:j])
 
             # NOTE: GET THE STRING BY SLICING FROM J+1 UPTO J+1+LENGTH OF CURRENT WORD FOUND
-            result.append(str(encoded_string[j+1:j+1+_len]))
+            result.append(str(encoded_string[j + 1 : j + 1 + _len]))
 
             # NOTE: UPDATE INITIAL ITERATOR I FROM J+1+LENGTH
             i = j + 1 + _len
 
         return result
-

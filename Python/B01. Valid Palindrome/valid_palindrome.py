@@ -3,9 +3,7 @@
 
 class Solution:
     def _is_alpha_numeric(self, c: str) -> bool:
-        return ord("A") <= ord(c) <= ord("Z") or \
-            ord("a") <= ord(c) <= ord("z") or \
-            ord("0") <= ord(c) <= ord("9")
+        return ord("A") <= ord(c) <= ord("Z") or ord("a") <= ord(c) <= ord("z") or ord("0") <= ord(c) <= ord("9")
 
     def execute(self, s: str) -> bool:
         _s = ""
