@@ -11,6 +11,7 @@ class Solution:
         for num in nums:
             _length = 0
 
+            # NOTE: IF NUM-1 NOT IN SET, THEN THIS IS THE START OF THE SEQUENCE AND WE CAN START CALCULATION OF LONGEST
             if (num - 1) not in _set:
                 while (num + _length) in _set:
                     _length += 1
