@@ -1,12 +1,12 @@
 package main
 
 import (
-	"Leetcode/01.BinarySearch"
-	"Leetcode/02.MergeSort"
-	"Leetcode/A01.ContainsDuplicate"
-	"Leetcode/A02.ValidAnagram"
-	"Leetcode/A03.TwoSum"
-	"Leetcode/A04.GroupAnagrams"
+	"Leetcode/00.Random/01.BinarySearch"
+	"Leetcode/00.Random/02.MergeSort"
+	"Leetcode/01.ArraysAndHashing/01.ContainsDuplicate"
+	"Leetcode/01.ArraysAndHashing/02.ValidAnagram"
+	"Leetcode/01.ArraysAndHashing/03.TwoSum"
+	"Leetcode/01.ArraysAndHashing/04.GroupAnagrams"
 	"fmt"
 )
 
