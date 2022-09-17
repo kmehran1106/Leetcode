@@ -21,4 +21,3 @@ class Solution:
                 i = index + 1
 
         return [start, end]
-
