@@ -17,4 +17,3 @@ class Solution:
             end += 1
 
         return max_profit
-

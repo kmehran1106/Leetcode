@@ -2,7 +2,22 @@ from typing import List
 
 
 class Solution:
-    def execute(self, numbers: List[int]) -> List[int]:
+    def execute_with_sum(self, numbers: List[int]) -> List[int]:
+        _max = numbers[0]
+        _sum = 0
+
+        for index, number in enumerate(numbers):
+            _sum += number
+
+            if _sum > _max:
+                _max = _sum
+
+            if _sum < 0:
+                _sum = 0
+
+        return _max
+
+    def execute_with_index(self, numbers: List[int]) -> List[int]:
         _max = numbers[0]
         _sum = 0
 
