@@ -5,7 +5,7 @@ description = ""
 authors = ["Mehran Kader <kmehran.1106@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 pytest = "^7.1.2"
 pre-commit = "^2.19.0"
 flake8 = "^4.0.1"
