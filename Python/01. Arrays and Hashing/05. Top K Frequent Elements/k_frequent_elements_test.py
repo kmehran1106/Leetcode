@@ -23,9 +23,13 @@ def get_fixtures():
     second_input = InputTuple(nums=[1], k=1)
     second_output = [1]
 
+    third_input = InputTuple(nums=[-1, -1], k=1)
+    third_output = [-1]
+
     return [
         (first_input, first_output),
         (second_input, second_output),
+        (third_input, third_output),
     ]
 
 

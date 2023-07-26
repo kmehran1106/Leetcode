@@ -19,7 +19,7 @@ class Solution:
         for num in nums:
             _map[num] = 1 + _map.get(num, 0)
 
-        _temp = [[] for i in range(len(nums) + 1)]
+        _temp = [[]] * (len(nums) + 1)
         for k, v in _map.items():
             _temp[v].append(k)
 

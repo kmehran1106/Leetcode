@@ -25,4 +25,3 @@ def test_code(get_fixtures):
     for data in get_fixtures:
         assert Solution().execute_with_anagram(*data[0]) == data[1]
         assert Solution().execute_with_hashmap(*data[0]) == data[1]
-

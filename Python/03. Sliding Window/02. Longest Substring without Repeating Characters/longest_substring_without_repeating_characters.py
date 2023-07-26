@@ -36,5 +36,3 @@ class Solution:
                 i = index + 1
 
         return (end - start) + 1
-
-

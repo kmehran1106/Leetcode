@@ -11,7 +11,7 @@ def get_fixtures():
     second_input = [7, 6, 4, 3, 1]
     second_output = 0
 
-    third_input = [2,1,2,1,0,1,2]
+    third_input = [2, 1, 2, 1, 0, 1, 2]
     third_output = 2
 
     return [
