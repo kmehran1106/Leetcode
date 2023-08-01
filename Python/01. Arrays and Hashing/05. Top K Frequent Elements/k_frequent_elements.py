@@ -2,6 +2,7 @@
 
 
 from typing import List
+from collections import defaultdict
 
 
 class Solution:
@@ -15,15 +16,16 @@ class Solution:
         return list(_map.keys())[0:k]
 
     def solution_two(self, nums: List[int], t: int) -> List[int]:
-        _map = dict()
-        for num in nums:
-            _map[num] = 1 + _map.get(num, 0)
+        _map = defaultdict(int)
+        _temp = [[] for _ in range(len(nums) + 1)]
+        _result = []
 
-        _temp = [[]] * (len(nums) + 1)
+        for num in nums:
+            _map[num] += 1
+
         for k, v in _map.items():
             _temp[v].append(k)
 
-        _result = list()
         for l in _temp[::-1]:
             _result.extend(l)
 

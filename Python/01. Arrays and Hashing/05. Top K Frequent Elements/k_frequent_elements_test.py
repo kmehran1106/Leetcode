@@ -26,10 +26,14 @@ def get_fixtures():
     third_input = InputTuple(nums=[-1, -1], k=1)
     third_output = [-1]
 
+    fourth_input = InputTuple(nums=[3,0,1,0], k=1)
+    fourth_output = [0]
+
     return [
         (first_input, first_output),
         (second_input, second_output),
         (third_input, third_output),
+        (fourth_input, fourth_output)
     ]
 
 
